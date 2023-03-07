@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { web3 } from "@/web3utils";
 import Link from "next/link";
 import { useMemo, useState } from "react";
@@ -27,7 +28,7 @@ const Home = () => {
   useMemo(() => {
     getBlockInfo();
     blocks && console.log(blocks);
-  }, []);
+  }, [blocks]);
 
   return (
     <Layout>

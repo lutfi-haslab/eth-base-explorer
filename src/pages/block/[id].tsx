@@ -79,8 +79,8 @@ const BlockDetail = () => {
           return info
             .getValue()
             .map((item: any, i: any) => (
-              <Link href={`/transaction/${item}`}>
-                <p key={i} className="underline cursor-pointer my-1 text-blue-700">{item}</p>
+              <Link key={i} href={`/transaction/${item}`}>
+                <p className="underline cursor-pointer my-1 text-blue-700">{item}</p>
               </Link>
             ));
         } else {

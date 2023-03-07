@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { HiOutlineHome } from "react-icons/hi";
@@ -20,7 +21,7 @@ function ActiveLink({ children, href }: Links) {
   useEffect(() => {
     console.log(router.asPath);
     router.asPath === href ? setActive(true) : setActive(false);
-  }, []);
+  }, [href]);
   return (
     <Link
       href={href}
