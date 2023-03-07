@@ -1,10 +1,8 @@
 // @ts-nocheck
-import React from "react";
-import { useRouter } from "next/router";
 import Layout from "@/layouts/Main";
-import { web3, web3ws } from "@/web3utils";
-import erc20 from '@/abi/erc20.json'
-import { EventData } from "web3-eth-contract";
+import { web3 } from "@/web3utils";
+import { useRouter } from "next/router";
+import React from "react";
 const supplychain = require('@/abi/supplychain.json')
 
 
